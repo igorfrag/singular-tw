@@ -1,6 +1,8 @@
+import Logo from './Logo';
+
 export default function Navbar() {
   const navigation = [
-    { name: 'Docs', href: '#' },
+    { name: 'Docs', href: '/docs/getting-started' },
     { name: 'Analytics', href: '#' },
     { name: 'Enterprise', href: '#' },
   ];
@@ -8,9 +10,11 @@ export default function Navbar() {
   return (
     <div className='flex bg-white lg:px-48 h-16 items-center justify-center border-b border-gray-300'>
       <div className='m-12'>
-        <img src='public/logoipsum.svg' alt='LogoIpsum' />
+        <a href='/'>
+          <Logo />
+        </a>
       </div>
-      <div className='flex space-x-12'>
+      <div className='space-x-12 hidden sm:flex'>
         {navigation.map((item) => (
           <a
             key={item.name}

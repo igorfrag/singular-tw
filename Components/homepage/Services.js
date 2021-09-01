@@ -47,7 +47,7 @@ function Services() {
       <h3 className='text-gray-500 font-medium'>
         The world’s leading companies use and love Next.js
       </h3>
-      <div className='grid grid-flow-row grid-cols-3 grid-rows-2 m-6'>
+      <div className='grid grid-flow-row lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 m-6'>
         {cardData.map((item) => (
           <HomeCard
             title={item.title}

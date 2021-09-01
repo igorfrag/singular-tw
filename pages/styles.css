@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .accordion-group::before {
+    content: url(../public/assets/carat.svg);
+    padding-right: 0.5rem;
+  }
+}
